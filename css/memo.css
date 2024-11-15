@@ -19,3 +19,7 @@ header {
 h4,.button-area,.input,.csvTable{
     text-align: center;
 }
+
+table{
+    margin: auto;
+}
