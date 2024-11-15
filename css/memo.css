@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(220, 240, 248);
+}
+
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+.gide{
+    display: flex;
+    justify-content: center;
+}
+.jyoken, .retsu{
+    margin: 10px;
+}
+
+h4,.button-area,.input,.csvTable{
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PV memo</title>
+    <link rel="stylesheet" href="/kadai03_memo/memo.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>☀️ 東京都日照量記録 ☀️</h1>
+    </header>
+
+    <div class="gide">
+
+        <div class="jyoken">
+            <h3>１列目#条件説明</h3>
+            <p>#1:水平面全天日射量（0.01MJ/m2）</p>
+            <p>#2:水平面全天日射量の直達成分（0.01MJ/m2）</p>
+            <p>#3:水平面全天日射量の天空散乱成分（0.01MJ/m2）</p>
+            <p>#4:日照時間（0.1hr）</p>
+            <p>#5:気温（0.1℃）</p>
+
+        </div>
+        <div class="retsu">
+            <h3>２列目以降の値</h3>
+            <p>2列目:月</p>
+            <p>3列目:日</p>
+            <p>4列目:代表年（西暦）</p>
+            <p>5列目以降:1〜24 時のデータ</p>
+        </div>
+
+    </div>
+
+    <h4>CSVファイル読み込み</h4>
+    <div class="button-area">
+        <button class="save">セーブ</button>
+        <button class="clear">全て削除</button>
+        <button class="get">保存データ呼び出し</button>
+    </div>
+
+    <!-- ファイルアップロード -->
+     <div class="input">
+    <input type="file" class="csvFileInput" accept=".csv">
+        </div>
+    <table class="csvTable">
+    </table>
+
+
+    <!-- jQueryライブラリ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jQuery CSVライブラリ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+    <!-- papaparse 読込 -->
+    <script src="/kadai03_memo/papaparse.js"></script>
+    <!-- jsファイルリンク -->
+    <script src="/kadai03_memo/memo copy.js"></script>
+</body>
+
+</html>
